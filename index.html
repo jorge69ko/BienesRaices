@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raíces del Norte</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/nivo-lightbox/default.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll" href="#page-top">Raíces del Norte</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+      </button>
+      <div class="phone"><span>Llámanos</span> 877-123-4567</div>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" class="page-scroll">Nosotros</a></li>
+        <li><a href="#portfolio" class="page-scroll">Propiedades</a></li>
+        <li><a href="#services" class="page-scroll">Servicios</a></li>
+        <li><a href="#testimonials" class="page-scroll">Testimonios</a></li>
+        <li><a href="#contact" class="page-scroll">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+            <h1>Encuentra tu hogar ideal<br>con Raíces del Norte</h1>
+            <p>Conecta con las mejores oportunidades para comprar, vender o rentar propiedades en el norte del país.</p>
+            <a href="#about" class="btn btn-custom btn-lg page-scroll">Conócenos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <img src="img/about.jpg" class="img-responsive" alt="">
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>¿Quiénes somos?</h2>
+          <p>Somos una empresa inmobiliaria con más de 10 años de experiencia ayudando a las personas a encontrar el lugar perfecto para vivir o invertir. Nuestro equipo ofrece atención personalizada, confianza y transparencia.</p>
+          <h3>¿Por qué elegirnos?</h3>
+          <div class="list-style">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <ul>
+                <li>Experiencia comprobada</li>
+                <li>Trato humano y profesional</li>
+                <li>Asesoría legal y financiera</li>
+                <li>Garantía de satisfacción</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+              <ul>
+                <li>Consultas sin costo</li>
+                <li>Clientes felices</li>
+                <li>Gestión integral</li>
+                <li>Precios competitivos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Servicios</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-1.jpg" alt=""> </div>
+        <div class="service-desc">
+          <h3>Compra de Propiedades</h3>
+          <p>Te ayudamos a encontrar la casa o terreno que necesitas según tu presupuesto y necesidades.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-2.jpg" alt=""> </div>
+        <div class="service-desc">
+          <h3>Venta de Inmuebles</h3>
+          <p>Publicamos y promovemos tu propiedad para conseguir los mejores resultados en poco tiempo.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-media"> <img src="img/services/service-3.jpg" alt=""> </div>
+        <div class="service-desc">
+          <h3>Renta de Casas</h3>
+          <p>Gestionamos contratos de renta con asesoría legal y acompañamiento durante todo el proceso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Filtros de propiedades -->
+<style>
+  .filter-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1100px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+    position: relative;
+  }
+  .filter-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  .filter-tabs .tab {
+    background: #c40000;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    margin: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .filter-tabs .tab.active, .filter-tabs .tab:hover {
+    background: #900000;
+  }
+  .filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .filter-form input, .filter-form select {
+    padding: 10px;
+    width: 220px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .filter-form button {
+    background: #c40000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .filter-form button:hover {
+    background: #900000;
+  }
+</style>
+
+<div class="filter-container">
+  <div class="filter-tabs">
+    <button class="tab active" data-operacion="venta">Venta</button>
+    <button class="tab" data-operacion="renta">Renta</button>
+    <button class="tab" data-operacion="alojamiento">Alojamiento</button>
+    <button class="tab" data-operacion="remate">Remate</button>
+  </div>
+  <div class="filter-form">
+    <input type="text" id="filtro-ubicacion" placeholder="Ubicación">
+    <select id="filtro-tipo">
+      <option value="">Tipo</option>
+      <option value="casa">Casa</option>
+      <option value="departamento">Departamento</option>
+      <option value="terreno">Terreno</option>
+    </select>
+    <button onclick="filtrarPropiedades()">Buscar</button>
+  </div>
+</div>
+
+<script>
+  // Activar tab
+  document.querySelectorAll('.filter-tabs .tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.filter-tabs .tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    });
+  });
+
+  // Filtro dinámico
+  function filtrarPropiedades() {
+    const operacion = document.querySelector('.tab.active').dataset.operacion;
+    const tipo = document.getElementById('filtro-tipo').value.toLowerCase();
+    const ubicacion = document.getElementById('filtro-ubicacion').value.toLowerCase();
+
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+      const matchOperacion = item.dataset.operacion === operacion;
+      const matchTipo = tipo === '' || item.dataset.tipo === tipo;
+      const matchUbicacion = ubicacion === '' || item.dataset.ubicacion.includes(ubicacion);
+
+      item.style.display = (matchOperacion && matchTipo && matchUbicacion) ? 'block' : 'none';
+    });
+  }
+</script>
+
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <h2>Propiedades destacadas</h2>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="venta" data-tipo="casa" data-ubicacion="centro">
+            <div class="hover-bg">
+              <a href="img/portfolio/01-large.jpg" title="Casa en el centro" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Casa en el centro</h4>
+                  <p>$1,200,000 MXN</p>
+                </div>
+                <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Casa en el centro">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="venta" data-tipo="departamento" data-ubicacion="norte">
+            <div class="hover-bg">
+              <a href="img/portfolio/02-large.jpg" title="Departamento moderno" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Departamento moderno</h4>
+                  <p>$850,000 MXN</p>
+                </div>
+                <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Departamento moderno">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="renta" data-tipo="casa" data-ubicacion="sur">
+            <div class="hover-bg">
+              <a href="img/portfolio/03-large.jpg" title="Casa con jardín" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Casa con jardín</h4>
+                  <p>$980,000 MXN</p>
+                </div>
+                <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Casa con jardín">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="remate" data-tipo="departamento" data-ubicacion="centro">
+            <div class="hover-bg">
+              <a href="img/portfolio/04-large.jpg" title="Residencial moderno" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Residencial moderno</h4>
+                  <p>$1,500,000 MXN</p>
+                </div>
+                <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Residencial moderno">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="venta" data-tipo="casa" data-ubicacion="norte">
+            <div class="hover-bg">
+              <a href="img/portfolio/05-large.jpg" title="Casa tipo colonial" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Casa tipo colonial</h4>
+                  <p>$1,300,000 MXN</p>
+                </div>
+                <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Casa tipo colonial">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="renta" data-tipo="departamento" data-ubicacion="centro">
+            <div class="hover-bg">
+              <a href="img/portfolio/06-large.jpg" title="Departamento céntrico" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Departamento céntrico</h4>
+                  <p>$790,000 MXN</p>
+                </div>
+                <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Departamento céntrico">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="venta" data-tipo="casa" data-ubicacion="sur">
+            <div class="hover-bg">
+              <a href="img/portfolio/07-large.jpg" title="Casa familiar amplia" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Casa familiar amplia</h4>
+                  <p>$1,800,000 MXN</p>
+                </div>
+                <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Casa familiar amplia">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="alojamiento" data-tipo="departamento" data-ubicacion="centro">
+            <div class="hover-bg">
+              <a href="img/portfolio/08-large.jpg" title="Penthouse con vista" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Penthouse con vista</h4>
+                  <p>$2,400,000 MXN</p>
+                </div>
+                <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Penthouse con vista">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="portfolio-item" data-operacion="remate" data-tipo="casa" data-ubicacion="norte">
+            <div class="hover-bg">
+              <a href="img/portfolio/09-large.jpg" title="Casa en esquina" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>Casa en esquina</h4>
+                  <p>$1,100,000 MXN</p>
+                </div>
+                <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Casa en esquina">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .portfolio-items -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+</div> <!-- #portfolio -->
+<!-- Testimonials Section -->
+<div id="testimonials" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Testimonios</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image">
+            <img src="img/testimonials/01.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>"Gracias a Raíces del Norte encontré mi casa ideal. El proceso fue rápido y transparente."</p>
+            <div class="testimonial-meta">- María G.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image">
+            <img src="img/testimonials/02.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>"Vendí mi casa en menos de un mes con excelente asesoría. Muy recomendados."</p>
+            <div class="testimonial-meta">- José R.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial">
+          <div class="testimonial-image">
+            <img src="img/testimonials/03.jpg" alt="">
+          </div>
+          <div class="testimonial-content">
+            <p>"Me ayudaron en todo el trámite de renta de mi departamento. Profesionalismo total."</p>
+            <div class="testimonial-meta">- Ana L.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+  <div class="container">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="section-title">
+          <h2>Contáctanos</h2>
+          <p>Déjanos tus datos y nos comunicaremos contigo lo antes posible.</p>
+        </div>
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+            </div>
+          </div>
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+          <button type="submit" class="btn btn-custom btn-lg">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-offset-1 contact-info">
+      <h4>Información de contacto</h4>
+      <p><span>Dirección:</span> Calle Principal #123, Ciudad Acuña, Coahuila.</p>
+      <p><span>Teléfono:</span> +52 877 123 4567</p>
+      <p><span>Correo:</span> contacto@raicesdelnorte.mx</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+  <div class="container text-center">
+    <p>&copy; 2025 Raíces del Norte. Todos los derechos reservados.</p>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery.1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
